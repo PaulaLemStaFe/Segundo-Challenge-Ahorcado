@@ -1,0 +1,313 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: no-repeat left/cover url(art-black-and-white-black-and-white-castle-wallpaper-preview.jpg);
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin: 0;
+  min-height: 93vh;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: #000000 0 0 .1em;
+}
+
+.titulo {
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  flex-direction: column;
+  font-size: 24px;
+  color: rgb(212, 181, 6);
+}
+
+.titulo h1 {
+  margin: 10px 0px 0px 0px;
+}
+
+.btns-inicio {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn-iniciar {
+    width: 280px;
+    height: 67px;
+    border-radius: 30px;
+    margin: 30px;
+    font-size: 20px;
+    color: whitesmoke;
+    border: 3px solid rgb(59, 58, 58);
+    box-shadow: 20px 0px 30px -5px #1b1b1b;
+    cursor: pointer;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(212, 181, 6)), to(rgb(59, 58, 58)));
+    background-image: -moz-linear-gradient(top left 90deg, rgb(212, 181, 6) 0%, rgb(59, 58, 58) 100%);
+    background-image: linear-gradient(top left 90deg, rgb(212, 181, 6) 0%, rgb(59, 58, 58) 100%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn-iniciar:hover {
+    cursor: pointer;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(59, 58, 58)), to(rgb(212, 181, 6)));
+    background-image: -moz-linear-gradient(top left 90deg, rgb(59, 58, 58) 0%, rgb(212, 181, 6) 100%);
+    background-image: linear-gradient(top left 90deg, rgb(59, 58, 58) 0%, rgb(212, 181, 6) 100%);
+}
+
+.btn-agregar {
+    width: 280px;
+    height: 67px;
+    border-radius: 30px;
+    margin: 30px;
+    font-size: 20px;
+    color: whitesmoke;
+    cursor: pointer;
+    border: 3px solid rgb(59, 58, 58);
+    box-shadow: 20px 0px 30px -5px #1b1b1b;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(59, 58, 58)), to(rgb(240, 212, 56)));
+    background-image: -moz-linear-gradient(top left 90deg, rgb(59, 58, 58) 0%, rgb(240, 212, 56) 100%);
+    background-image: linear-gradient(top left 90deg, rgb(59, 58, 58) 0%, rgb(240, 212, 56) 100%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn-agregar:hover {
+    cursor: pointer;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(240, 212, 56)), to(rgb(59, 58, 58)));
+    background-image: -moz-linear-gradient(top left 90deg, rgb(240, 212, 56) 0%, rgb(59, 58, 58) 100%);
+    background-image: linear-gradient(top left 90deg, rgb(240, 212, 56) 0%, rgb(59, 58, 58) 100%);
+}
+
+.palabra-nueva {
+    display: none;
+    width: 100%;
+    min-height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.campo {
+    width: auto;
+    height: 512px;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-palabra-nueva {
+    height: 48px;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 200px;
+    margin-right: 0px;
+    margin-left: 0px;
+    font-size: 32px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.alerta {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 12px;
+    color: whitesmoke;
+    opacity: 0.8;
+    font-size: 14px;
+    margin-bottom: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.alerta img {
+    width: 16px;
+    margin-right: 10px;
+    box-shadow: 20px 0px 30px -5px #1b1b1b;
+}
+
+.btn-guardar-empezar {
+  width: 280px;
+  height: 67px;
+  border-radius: 30px;
+  margin: 30px;
+  font-size: 20px;
+  color: whitesmoke;
+  border: 3px solid rgb(59, 58, 58);
+  box-shadow: 20px 0px 30px -5px #1b1b1b;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(212, 181, 6)), to(rgb(59, 58, 58)));
+  background-image: -moz-linear-gradient(top left 90deg, rgb(212, 181, 6) 0%, rgb(59, 58, 58) 100%);
+  background-image: linear-gradient(top left 90deg, rgb(212, 181, 6) 0%, rgb(59, 58, 58) 100%);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn-guardar-empezar:hover {
+    cursor: pointer;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(59, 58, 58)), to(rgb(212, 181, 6)));
+    background-image: -moz-linear-gradient(top left 90deg, rgb(59, 58, 58) 0%, rgb(212, 181, 6) 100%);
+    background-image: linear-gradient(top left 90deg, rgb(59, 58, 58) 0%, rgb(212, 181, 6) 100%);
+}
+
+.btn-cancelar {
+  width: 280px;
+  height: 67px;
+  border-radius: 30px;
+  margin: 30px;
+  font-size: 20px;
+  color: whitesmoke;
+  cursor: pointer;
+  border: 3px solid rgb(59, 58, 58);
+  box-shadow: 20px 0px 30px -5px #1b1b1b;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(212, 181, 6)), to(rgb(59, 58, 58)));
+  background-image: -moz-linear-gradient(top left 90deg, rgb(212, 181, 6) 0%, rgb(59, 58, 58) 100%);
+  background-image: linear-gradient(top left 90deg, rgb(212, 181, 6) 0%, rgb(59, 58, 58) 100%);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn-cancelar:hover {
+    cursor: pointer;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(59, 58, 58)), to(rgb(212, 181, 6)));
+    background-image: -moz-linear-gradient(top left 90deg, rgb(59, 58, 58) 0%, rgb(212, 181, 6) 100%);
+    background-image: linear-gradient(top left 90deg, rgb(59, 58, 58) 0%, rgb(212, 181, 6) 100%);
+}
+
+.juego {
+    display: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dibujo {
+    width: 294px;
+    height: 360px;
+}
+
+#dibujo {
+  margin-bottom: 30px;
+}
+
+.entrada-juego {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 464px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.letras {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 48px;
+    color: whitesmoke;
+}
+
+.letra {
+    text-align: center;
+    width: 40px;
+}
+
+.lineas {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: whitesmoke;
+}
+
+.linea {
+    width: 40px;
+    height: 4px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+
+.letras-no {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 24px;
+    color: whitesmoke;
+    opacity: 0.8;
+}
+
+.letra-no {
+    padding: 0 5px;
+}
+
+.btns-juego {
+    display: inline-block;
+    text-align: center;
+    width: 100vw;
+    height: auto;
+}
+
+.btn-nuevojuego {
+  width: 280px;
+  height: 67px;
+  border-radius: 30px;
+  margin: 30px;
+  font-size: 20px;
+  color: whitesmoke;
+  border: 3px solid rgb(59, 58, 58);
+  box-shadow: 20px 0px 30px -5px #1b1b1b;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(212, 181, 6)), to(rgb(59, 58, 58)));
+  background-image: -moz-linear-gradient(top left 90deg, rgb(212, 181, 6) 0%, rgb(59, 58, 58) 100%);
+  background-image: linear-gradient(top left 90deg, rgb(212, 181, 6) 0%, rgb(59, 58, 58) 100%);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn-nuevojuego:hover {
+    cursor: pointer;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(59, 58, 58)), to(rgb(212, 181, 6)));
+    background-image: -moz-linear-gradient(top left 90deg, rgb(59, 58, 58) 0%, rgb(212, 181, 6) 100%);
+    background-image: linear-gradient(top left 90deg, rgb(59, 58, 58) 0%, rgb(212, 181, 6) 100%);
+}
+
+.btn-desistir {
+  width: 280px;
+  height: 67px;
+  border-radius: 30px;
+  margin: 30px;
+  font-size: 20px;
+  color: whitesmoke;
+  cursor: pointer;
+  border: 3px solid rgb(59, 58, 58);
+  box-shadow: 20px 0px 30px -5px #1b1b1b;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(212, 181, 6)), to(rgb(59, 58, 58)));
+  background-image: -moz-linear-gradient(top left 90deg, rgb(212, 181, 6) 0%, rgb(59, 58, 58) 100%);
+  background-image: linear-gradient(top left 90deg, rgb(212, 181, 6) 0%, rgb(59, 58, 58) 100%);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.btn-desistir:hover {
+    cursor: pointer;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(59, 58, 58)), to(rgb(212, 181, 6)));
+    background-image: -moz-linear-gradient(top left 90deg, rgb(59, 58, 58) 0%, rgb(212, 181, 6) 100%);
+    background-image: linear-gradient(top left 90deg, rgb(59, 58, 58) 0%, rgb(212, 181, 6) 100%);
+}
+
+.mensaje {
+    margin: 20px;
+    font-size: 24px;
+}
+
+.derechos {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  background-color: rgb(240, 212, 56);
+  color: rgb(59, 58, 58);
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  position: fixed;
+  bottom: 0;
+}

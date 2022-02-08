@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Ahorcado</title>
+  <link rel="shortcut icon" href="gallow.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="titulo">
+    <h1><strong><i>AHORCADO</i></strong></h1>
+  </div>
+
+  <section>
+    <div class="btns-inicio">
+      <button class="btn-iniciar">Iniciar Juego</button>
+      <button class="btn-agregar">Agregar Nueva Palabra</button>
+    </div>
+  </section>
+
+  <section class="palabra-nueva">
+    <section class="campo">
+        <input class="input-palabra-nueva" type="text" placeholder="Ingrese una palabra">
+        <section>
+            <h5 class="alerta"><i><img src="./exclamation-circle-solid.svg" alt="Alerta">Máx. de 8 letras. Solo Mayúsculas. Sin Acentos ni Carácteres Especiales</i></h5>
+            <section class="btns-agregar-palabra">
+                <button class="btn-guardar-empezar">Guardar Y Empezar</button>
+                <button class="btn-cancelar">Cancelar</button>
+            </section>
+        </section>
+    </section>
+  </section>
+
+  <section class="juego">
+    <section class="dibujo">
+        <canvas id="dibujo" height="360px" width="294px"></canvas>
+    </section>
+    <section class="entrada-juego">
+        <section class="letras">
+            
+        </section>
+        <section class="lineas">
+            <span class="linea linea-1"></span>
+            <span class="linea linea-2"></span>
+            <span class="linea linea-3"></span>
+            <span class="linea linea-4"></span>
+            <span class="linea linea-5"></span>
+            <span class="linea linea-6"></span>
+            <span class="linea linea-7"></span>
+            <span class="linea linea-8"></span>
+        </section>
+        <section class="letras-no">
+            
+        </section>
+    </section>
+    <section class="mensaje">
+        
+    </section>
+    <section class="btns-juego">
+        <button class="btn-nuevojuego">Nuevo Juego</button>
+        <button class="btn-desistir">Desistir</button>
+    </section>
+  </section>
+
+  <footer class="derechos">
+    <p>Todos los derechos reservados | © 2022 María Paula Lemos</p>
+  </footer>
+  
+  <script type="text/javascript" src="scripts/agregar-palabra.js"></script>
+  <script type="text/javascript" src="scripts/canvas.js"></script>
+  <script type="text/javascript" src="scripts/dibujar-horca.js"></script>
+  <script type="text/javascript" src="scripts/dibujar-letra-correcta.js"></script>
+  <script type="text/javascript" src="scripts/dibujar-letra-incorrecta.js"></script>
+  <script type="text/javascript" src="scripts/dibujar-mensaje.js"></script>
+  <script type="text/javascript" src="scripts/escoger-palabra.js"></script>
+  <script type="text/javascript" src="scripts/iniciar-juego.js"></script>
+  <script type="text/javascript" src="scripts/index.js"></script>
+  <script type="text/javascript" src="scripts/mostrar-guiones.js"></script>
+  <script type="text/javascript" src="scripts/verificar-fin-del-juego.js"></script>
+  <script type="text/javascript" src="scripts/verificar-letra.js"></script>
+  <script type="text/javascript" src="scripts/verificar-palabra.js"></script>
+  <script type="text/javascript" src="scripts/verificar-tecla.js"></script>
+</body>
+
+</html>
